@@ -2,6 +2,7 @@
 #import "Colours/Colours.h"
 #import "BHTManager.h"
 #import "BHTBundle/BHTBundle.h"
+#import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
 
 
 static UIFont * _Nullable TAEStandardFontGroupReplacement(UIFont *self, SEL _cmd, CGFloat arg1, CGFloat arg2) {
