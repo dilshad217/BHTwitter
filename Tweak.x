@@ -2,6 +2,8 @@
 #import "Colours/Colours.h"
 #import "BHTManager.h"
 #import "BHTBundle/BHTBundle.h"
+#import "MobileCoreServices/MobileCoreServices.h"
+#import "MobileCoreServices/UTCoreTypes.h"
 #import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
 
 
@@ -553,7 +555,7 @@ static void batchSwizzlingOnClass(Class cls, NSArray<NSString*>*origSelectors, I
 }
 %new - (void)handleUploadButton:(UIButton *)sender {
     UIImagePickerController *videoPicker = [[UIImagePickerController alloc] init];
-    videoPicker.mediaTypes = @[(NSString*)UTTypeMovie];
+    videoPicker.mediaTypes = @[(NSString*)kUTTypeMovie];
     videoPicker.delegate = self;
     
     [topMostController() presentViewController:videoPicker animated:YES completion:nil];
