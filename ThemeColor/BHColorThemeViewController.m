@@ -11,6 +11,8 @@
 #import "../BHTBundle/BHTBundle.h"
 #import "../Colours/Colours.h"
 #import "../TWHeaders.h"
+#import "../MobileCoreServices/MobileCoreServices.h"
+
 
 @interface BHColorThemeViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UICollectionView *colorCollectionView;
