@@ -19,7 +19,7 @@ on:
         type: string
       deploy_format:
         description: "Deployment format"
-        default: rootfull
+        default: sideloaded
         required: true
         type: choice
         options:
